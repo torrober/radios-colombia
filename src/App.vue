@@ -1,6 +1,6 @@
 <template>
   <Navbar title="Radios Colombia" @searchStation="searchSt($event)" />
-  <div class="container-fluid" style="padding-bottom: 200px;">
+  <div class="container-fluid" style="padding-bottom: 10%;">
     <div v-if="loaded" class="row">
       <div v-if="isSearching" @click="clearSearch()" class="p-5 bg-primary text-white rounded">
         <button type="button" class="btn btn-dark">🡠 Regresar</button>

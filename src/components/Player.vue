@@ -12,12 +12,12 @@
                     <h5 style="color: white;">Estás escuchando: {{ name }}</h5>
                     <h6 v-if="state" class="text-muted bg-dark">{{ state }}</h6>
                     <audio :src="url" @change="togglePlay()" id="stream" autoplay></audio>
-                    <div style="-webkit-user-select: none; ">
-                        <span v-if="isPlaying" style="color: white; cursor: pointer;" @click="togglePlay()"
+                    <div style="user-select: none; display: inline-flex; width: 100%;">
+                        <span v-if="isPlaying" style="color: white;cursor: pointer;width: calc(100% - 153px);" @click="togglePlay()"
                             class="material-symbols-outlined">
                             pause
                         </span>
-                        <span v-else style="cursor: pointer; color: white;" @click="togglePlay()"
+                        <span v-else style="color: white;cursor: pointer;width: calc(100% - 153px);" @click="togglePlay()"
                             class="material-symbols-outlined">
                             play_arrow
                         </span>

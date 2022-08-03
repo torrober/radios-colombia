@@ -1,5 +1,5 @@
 <template>
-    <div class="card" style="width: 100%;">
+    <div class="card" style="width: 100%; margin: 10px;">
         <div class="card-body">
             <div class="row">
                 <div class="col">
