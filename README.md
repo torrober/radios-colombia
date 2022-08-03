@@ -1,24 +1,11 @@
-# radios-colombia
+# Radios Colombia
+My first ever VueJS app! a simple, yet effective radio player.
 
-## Project setup
-```
-npm install
-```
+Data from radio-browser.info
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+![Home Screen](https://i.imgur.com/8NHkPWa.png)
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![Search screen](https://i.imgur.com/RqcOH8u.png)
+### Todo list
+✖️ Fix play button issues
+✖️ Add english language option
