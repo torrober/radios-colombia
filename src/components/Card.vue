@@ -14,7 +14,7 @@
                     <div v-if="hasTags">
                         <span v-for="tag in tagsArray" class="badge bg-light text-dark" v-bind:key="tag">{{tag}}</span>
                     </div>
-                    <div class="btn btn-success" @click="playAudio()">Reproducir</div>
+                    <div class="btn btn-success" @click="playAudio()">{{$t('playText')}}</div>
                 </div>
             </div>
         </div>

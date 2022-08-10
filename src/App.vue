@@ -3,8 +3,8 @@
   <div class="container-fluid" style="padding-bottom: 10%;">
     <div v-if="loaded" class="row">
       <div v-if="isSearching" @click="clearSearch()" class="p-5 bg-primary text-white rounded">
-        <button type="button" class="btn btn-dark">🡠 Regresar</button>
-        <h1 id="searchRes">Resultados de: {{sq}}</h1>
+        <button type="button" class="btn btn-dark">🡠 {{ $t('goBack')}}</button>
+        <h1 id="searchRes">{{ $t('searchRes')}}{{sq}}</h1>
       </div>
       <div v-for="element in content" v-bind:key="element" class="col-12">
         <Card @changeStation="playStation($event)" :tags="element.tags" :name="element.name" :state="element.state"
@@ -83,3 +83,9 @@ export default {
   }
 }
 </script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+body {
+  font-family: 'Inter';
+}
+</style>

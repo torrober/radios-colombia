@@ -8,4 +8,4 @@ Data from radio-browser.info
 ![Search screen](https://i.imgur.com/RqcOH8u.png)
 ### Todo list
 ✖️ Fix play button issues
-✖️ Add english language option
+✅ Add english language option

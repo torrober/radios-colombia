@@ -9,7 +9,7 @@
                     </div>
                 </div>
                 <div class="col-11">
-                    <h5 style="color: white;">Estás escuchando: {{ name }}</h5>
+                    <h5 style="color: white;">{{$t('listeningTo')}} {{ name }}</h5>
                     <h6 v-if="state" class="text-muted bg-dark">{{ state }}</h6>
                     <audio :src="url" @change="togglePlay()" id="stream" autoplay></audio>
                     <div style="user-select: none; display: inline-flex; width: 100%;">
@@ -62,6 +62,8 @@ export default {
             let myAudio = document.getElementById('stream');
             if (myAudio.duration > 0 && !myAudio.paused) {
                 this.isPlaying = true;
+            } else {
+                this.isPlaying = false;
             }
         },
         togglePlay() {
